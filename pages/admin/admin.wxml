@@ -1,0 +1,3 @@
+输入要赋予开门权限的学生学号
+<input class="input" bindinput="getName"></input>
+<button type="primary" bindtap="tijiao">提交</button>

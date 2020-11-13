@@ -1,0 +1,3 @@
+检测到您的设备不支持人脸或指纹识别，请输入实验室独立密码
+<input class="input" bindinput="getMima"></input>
+<button type="primary" bindtap="tijiao">提交</button>

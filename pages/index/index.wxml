@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view wx:if="{{!loginOK}}">
+    <button type="primary" class="zuche" bindtap="denglu">登录</button>
+    <button bindtap="zhuce">注册</button>
+
+  </view> 
+  <view wx:else class="login-OK">
+  <view>登录成功</view>
+  <view>
+    <text>
+      {{xuehao}}
+    </text>
+    <button type="primary" class="zuche" bindtap="guanli">管理后台</button>
+    <button bindtap="tuichu">退出</button>
+  </view>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+
+</view>

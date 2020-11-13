@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/me/me",
+    "pages/map/map",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/zhuce/zhuce",
+    "pages/admin/admin",
+    "pages/home/home",
+    "pages/setting/setting",
+    "pages/mima/mima"
+
+
+  ],
+  
+  "permission":{
+    "scope.userLocation":{
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+  
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云大人脸门禁",
+    "navigationBarTextStyle":"black"
+  },
+"tabBar": {
+  "list": [
+  {
+    "pagePath": "pages/me/me",
+    "text": "主页",
+    "iconPath": "photo/home_.png",
+    "selectedIconPath": "photo/home.png"
+  },
+  {
+    "pagePath": "pages/map/map",
+    "text": "地图",
+    "iconPath": "photo/map_.png",
+    "selectedIconPath": "photo/map.png"
+  }
+],
+  "color":"#0094ff"
+},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

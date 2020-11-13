@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+
+    <!-- <button type="primary" bindtap="openBluetooth,login">芝麻开门</button>
+    <button bindtap="wode">我的</button> -->
+    <view class='container'>
+    <view class='home'>
+
+        <view class='camera' wx:if="{{isCamera == false}}">
+            <camera device-position="front" flash="off" binderror="error" style="width: 100%; height: 350px;"></camera>
+        </view>
+
+        <view class='preview' wx:if="{{isCamera == true}}">
+            <image mode="widthFix" src="{{src}}" style="width: 100%; height: 300px;"></image>
+        </view>
+        <image
+      src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1604746948055&di=816e6617d9c85ce09da74e1b75c91fce&imgtype=0&src=http%3A%2F%2Fimgs2.soufunimg.com%2Fnews%2F2017_11%2F07%2Fnews%2F1510043661878_000.jpg">
+    </image>
+    <view class='btn'>
+            <button wx:if="{{isCamera == false}}" type="default" bindtap="takePhoto">拍照</button>
+            <button wx:if="{{isCamera == true}}" type="default" bindtap="shibie">识别人脸</button>
+            <button wx:if="{{isCamera == true}}" type="default" bindtap="reTakePhoto">重拍</button>
+        </view>
+        <view class='bottom'>
+            <button wx:if="{{isCamera == true}}" class="weui-btn" bindtap="openBluetooth" type="primary"> 芝麻开门 </button>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,5 @@
+/* pages/mima/mima.wxss */
+.input{
+  border: 1px solid gainsboro;
+  margin: 20rpx;
+}
