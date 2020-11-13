@@ -55,7 +55,7 @@ windows7 以上
 
 下载微信开发者工具
 
-并进入这个网站下载源代码
+并进入这个网站下载源代码 并删除img文件夹
 
 > [项目网站](https://github.com/lwcsjzz/WX-YNU-AI)
 
