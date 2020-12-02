@@ -59,7 +59,7 @@ windows7 以上
 
 > [项目网站](https://github.com/lwcsjzz/WX-YNU-AI)
 
-用微信开发者工具导入项目，APPID为wxea7382d1e9ad46b2
+用微信开发者工具导入项目
 
 #### 用自己APPID配置：
 
